@@ -21,7 +21,7 @@ public class FasthdfsApplicationTests {
     // 文件上传
     @Test
     public void contextLoads() throws FileNotFoundException {
-        File file = new File("E:\\aa.png");
+        File file = new File("d:\\aa.png");
         FileInputStream inputStream = new FileInputStream(file);
         StorePath storePath = storageClient.uploadFile(inputStream,
                 file.length(), "png", null);
@@ -34,9 +34,9 @@ public class FasthdfsApplicationTests {
     @Test
     public void testDownload() throws IOException {
         byte[] b = storageClient.downloadFile("group1",
-                "M00/00/00/wKgriFr1bX-AG3JlABr-dch7j3Q095.png", new DownloadByteArray());
+                "M00/00/00/wKgqgl04CemAOAD9AAAOF0QN2hg097.png", new DownloadByteArray());
         FileOutputStream fileOutputStream = new
-                FileOutputStream("E:\\2.png");
+                FileOutputStream("d:\\2.png");
         fileOutputStream.write(b);
         fileOutputStream.close();
     }
