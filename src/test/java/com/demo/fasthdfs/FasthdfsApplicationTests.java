@@ -36,7 +36,7 @@ public class FasthdfsApplicationTests {
         byte[] b = storageClient.downloadFile("group1",
                 "M00/00/00/wKgqgl04CemAOAD9AAAOF0QN2hg097.png", new DownloadByteArray());
         FileOutputStream fileOutputStream = new
-                FileOutputStream("d:\\2.png");
+                FileOutputStream("d:\\3.png");
         fileOutputStream.write(b);
         fileOutputStream.close();
     }

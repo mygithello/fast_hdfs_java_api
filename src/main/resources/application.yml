@@ -11,3 +11,6 @@ fdfs:
 #TrackerList参数,支持多个
     tracker-list:
         - 192.168.42.130:22122
+    pool:
+        max-total: 100
+        max-wait-millis: 60
