@@ -21,7 +21,7 @@ public class FasthdfsApplicationTests {
     // 文件上传
     @Test
     public void contextLoads() throws FileNotFoundException {
-        File file = new File("d:\\aa.png");
+        File file = new File("d:\\2.png");
         FileInputStream inputStream = new FileInputStream(file);
         StorePath storePath = storageClient.uploadFile(inputStream,
                 file.length(), "png", null);
