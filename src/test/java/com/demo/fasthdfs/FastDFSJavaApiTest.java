@@ -34,10 +34,10 @@ public void before() throws IOException, MyException {
     public void testUpload() throws IOException, MyException {
         // 参数一：本地文件路径 参数二: 文件的扩展名 参数三：元数据列表
         //String[] str =
-        client.upload_file("C:\\Users\\\\jiayachong\\Desktop\\1.png", "png",
+        client.upload_file("C:\\Users\\jiayachong\\Desktop\\1.png", "png",
                 null);
         String[] str =
-                client.upload_file("C:\\Users\\\\jiayachong\\Desktop\\1.png", "png",
+                client.upload_file("C:\\Users\\jiayachong\\Desktop\\1.png", "png",
                         new NameValuePair[]{new NameValuePair("width","1080"),new
                                 NameValuePair("author","jyc")}
                 );
